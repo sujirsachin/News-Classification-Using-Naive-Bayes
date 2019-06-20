@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/tec.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: auto 100%;
+    }
+h1 {color: black
+font-weight:bold
+font-family: 'Bookman';
+}
+
+h2 {color:red
+font-family: 'Bookman';
+font-weight:bold}
+
+.home {
+
+
+    font-size:25pt;
+
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is Technology</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+
+<h1> Technology News </h1>
+<h2> For the latest news about Technology go to: </h2>
+
+ <a href= "https://techcrunch.com/" target="_blank"><h2> TechCrunch </h2>   </a>
+
+
+
+
+ <a href="https://www.wired.com/" target="_blank"> <h2> Wired </h2></a>
+
+
+
+ <a href="https://www.firstpost.com/tech"><h2> Techno </h2> </a>
+
+
+ <a href= "https://mashable.com"><h2> Mashable </h2>  </a>
+<a class="home" href="{{ url_for('home')}}">home</a>
+
+
+ </body>
+ </html>
+

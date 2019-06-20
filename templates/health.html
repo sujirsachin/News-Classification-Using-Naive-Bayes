@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/sciences1.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+h1 {
+color: black;
+font-weight:bold;
+
+font-family: 'Bookman';
+}
+
+h2 {color:black;
+font-family: 'Bookman';
+font-weight:bold; }
+ .home {
+
+
+    font-size:25pt;
+
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is Health and Sciences News</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+
+<h1> Health and Sciences News </h1>
+<h2> For the latest news about Health and Sciences go to: </h2>
+
+ <a href= "https://undark.org" target="_blank"><h2> Undark </h2>   </a>
+
+
+
+
+ <a href="https://www.nature.com/" target="_blank"> <h2> Nature </h2></a>
+
+
+
+ <a href="http://nautil.us/"><h2> Nautilis </h2> </a>
+
+
+ <a href= "https://www.quantamagazine.org/"><h2>Quanta Magazine </h2>  </a>
+
+
+
+ <a href= "https://massivesci.com/"> <h2> Massive Science </h2>
+ </a>
+<a class="home" href="{{ url_for('home')}}">home</a>
+
+ </body>
+ </html>
+
+

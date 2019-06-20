@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/int.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+h1 {color: black}
+
+h2 {color:red
+font-weight:bold}
+.home {
+
+
+    font-size:25pt;
+
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is International News</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+
+<h1> International News </h1>
+<h2> For the latest news about the World go to: </h2>
+
+ <a href= "https://www.cnn.com/" target="_blank"><h2> CNN International </h2>   </a>
+
+
+
+
+ <a href= "https://www.eonline.com/shows/e_news"target="_blank"> <h2> Fox International </h2></a>
+
+
+
+ <a href= "https://www.bbc.com/"><h2> BBC International </h2> </a>
+
+
+ <a href= "https://www.aljazeera.com/"><h2> Al-Jazeera </h2>  </a>
+
+
+
+ <a href= "https://abcnews.go.com/International"> <h2> ABC International </h2>
+ </a>
+<a class="home" href="{{ url_for('home')}}">home</a>
+
+
+ </body>
+ </html>
+

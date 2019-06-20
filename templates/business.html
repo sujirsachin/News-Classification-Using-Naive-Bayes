@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/business.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+h1 {
+color: white;
+font-weight:bold;
+
+font-family: 'Bookman';
+}
+
+h2 {color:red;
+font-family: 'Bookman';
+font-weight:bold; }
+ .home {
+
+
+    font-size:25pt;
+
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is Business News</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+<h1> Business News </h1>
+<h2> For the latest news about Business go to: </h2>
+
+ <a href= "https://finance.yahoo.com/" target="_blank"><h2> Yahoo Finance </h2>   </a>
+
+
+
+
+ <a href="https://www.forbes.com/#2d6b6ddf2254" target="_blank"> <h2> Forbes </h2></a>
+
+
+
+ <a href="https://www.msn.com/"><h2> MSN Money Central </h2> </a>
+
+
+ <a href= "https://www.cnn.com/business"><h2>CNN Busines </h2>  </a>
+
+
+
+ <a href= "https://www.bloomberg.com/"> <h2> Bloomberg </h2>
+ </a>
+<a class="home" href="{{ url_for('home')}}">home</a>
+
+ </body>
+ </html>
+

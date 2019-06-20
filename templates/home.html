@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<style>
+    { margin: 0; padding: 0; }
+
+    body {
+        background: url('static/bg3.jpeg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        	filter: grayscale(80%);
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .ml-container {
+    display: flex;
+        justify-content: center;
+}
+h1
+{font-size: 60px;
+font-family: 'Bookman';
+color: #fff;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+text-align: center;
+
+}
+h2
+{
+font-size: 40px;
+font-family: 'Bookman';
+color: #fff;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+text-align: center;
+
+}
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+</style>
+
+<body>
+
+
+
+	<header>
+		<div class="container">
+
+		<h1> News Classifier</h1>
+
+	</div>
+	</header>
+
+</div>
+	<div class="ml-container" style="text-align:center">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<h2>Enter the news headline to predict the category...</h2>
+
+		<input type="text" name="message" rows="4" cols="50" placeholder="Enter The News Headline.."></input>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict" align="center">
+<p align="right"> <h2> Avaialable Categories to predict:</h2>
+			<ol> <h2>
+			<li>Sports</li>
+			<li>Politics</li>
+			<li>Entertainment</li>
+			<li>International</li>
+			<li>Technology</li>
+			<li>Business</li>
+			<li>Health and Sciences</li></h2>
+		</ol>
+	</form>
+
+	</div>
+
+
+
+</body>
+</html>

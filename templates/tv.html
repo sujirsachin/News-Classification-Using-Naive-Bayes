@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/tv.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+h1 {color: black}
+h2 {color: black}
+h2 {color:red
+font-weight:bold}
+.home {
+
+
+    font-size:25pt;
+
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is Entertainment</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+
+<h1> Entertainment News</h1>
+<h2> For the latest news about Entertainment go to: </h2>
+
+ <a href= "https://variety.com/"target="_blank"><h2> Variety </h2>   </a>
+
+
+
+
+ <a href= "https://www.eonline.com/shows/e_news"target="_blank"> <h2> E! Online </h2></a>
+
+
+
+ <a href= " https://www.hollywoodreporter.com/"><h2> The Hollywood Reported </h2> </a>
+
+
+ <a href= "https://www.vibe.com/"><h2> The Vibe </h2>  </a>
+
+
+
+ <a href= "https://www.spin.com/"> <h2> Spin! </h2>
+ </a>
+
+<a class="home" href="{{ url_for('home')}}">home</a>
+
+ </body>
+ </html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/sports.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+h1 {color: black}
+h2 {color: black}
+h4 {color:red}
+.home {
+
+
+    font-size:25pt;
+    color:black;
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is Sports</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+
+<h1> Sports News </h1>
+<h2> For the latest news about Sports go to: </h2>
+ 
+ <a href= "https://sports.yahoo.com/"><h2> Yahoo Sports </h2>   </a>
+ 
+
+ 
+ 
+ <a href= "http://www.espn.com/" > <h2> ESPN Sports </h2></a>
+ 
+
+ 
+ <a href= " https://www.bleacherreport.com/"><h2> BleacherReport </h2> </a>
+
+ 
+ <a href= "https://www.si.com/"><h2> Sports Illustrated </h2>  </a>
+ 
+
+ 
+ <a href= "https://www.nbcsports.com/"> <h2> NBC Sports </h2>
+ </a>
+ <a class="home" href="{{ url_for('home')}}">home</a>
+
+
+ </body>
+ </html> 

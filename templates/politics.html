@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+        background: url('static/pol.gif') no-repeat center center fixed;
+        -webkit-background-size: cover;
+  background-size: auto 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+
+    }
+h1 {color: black}
+h2 {color: black}
+h4 {color:red}
+.home {
+
+
+    font-size:25pt;
+
+     top:0;
+     right:0;
+     position: fixed;
+
+
+    }
+</style>
+</head>
+<body >
+
+<h2> The Predicted Category for " {{ data }} " is Politics</h2>
+<h2> Accuracy: {{ acc*100 }} %</h2>
+
+<h1> Politics News </h1>
+<h2> For the latest news about Politics go to: </h2>
+
+ <a href= "https://www.washingtontimes.com/"><h2> Washington Times </h2>   </a>
+
+
+
+
+ <a href= "https://www.reuters.com/news/archive/politicsNews"> <h2> Reuters </h2></a>
+
+
+
+ <a href= " https://www.politico.com/"><h2> BleacherReport </h2> </a>
+
+
+ <a href= "https://www.cnn.com/politics"><h2> CNN </h2>  </a>
+
+
+
+ <a href= "https://www.breitbart.com/"> <h2> BREITBART </h2>
+ </a>
+<a class="home" href="{{ url_for('home')}}">home</a>
+
+
+ </body>
+ </html>
